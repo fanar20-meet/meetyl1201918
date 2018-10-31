@@ -1,9 +1,10 @@
 import turtle
-turtle.register_shape("Caleb.gif") 
+turtle.addshape("Caleb.gif") 
 turtle.shape("Caleb.gif")
-for i in range(100):
+turtle.speed(0)
+for i in range(2000):
 	turtle.forward(200)
-	turtle.right(45)
+	turtle.right(3)
 	turtle.forward(100)
 	turtle.right(45)
 	turtle.forward(50)
