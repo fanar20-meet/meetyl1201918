@@ -32,7 +32,7 @@
 # class Person():
 # 	def __init__(self, first_name, last_name):
 #     		self.first = first_name
-#     		self.last = g
+#     		self.last = last_name
 # 	def speak(self):
 #   		print("My name is " +  self.first + " " + self.last )
 
@@ -170,22 +170,22 @@
 
 
 
-problem 9 
+# problem 9 
 
-class Cat():
-	def __init__(self,name,age):
-		self.name = name
-		self.age = age 
-	def birthday(self):
-		self.age += 1
-		if self.age >= 100 :
-			print("Dong dong, the cat is dead!")
-		else:
-			print(self.name + "hasing its"+ str(self.age) + "birthday!")
+# class Cat():
+# 	def __init__(self,name,age):
+# 		self.name = name
+# 		self.age = age 
+# 	def birthday(self):
+# 		self.age += 1
+# 		if self.age >= 100 :
+# 			print("Dong dong, the cat is dead!")
+# 		else:
+# 			print(self.name + "hasing its"+ str(self.age) + "birthday!")
 		
-my_cat = Cat("Salem",7)
-my_cat.birthday()
-# what I want: my cat to celebrate its 8th birthday (and all the 
+# my_cat = Cat("Salem",7)
+# my_cat.birthday()
+# # what I want: my cat to celebrate its 8th birthday (and all the 
 # birthdays that come before that)
 
 
