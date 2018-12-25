@@ -2,8 +2,7 @@
 # from turtle import Turtle
 # import random
 
-
-# # 1
+# 1
 # turtle.colormode(255)
 
 
@@ -23,7 +22,7 @@
 # square1 = square(5,"red")
 # square1.random_color()
 
-# # 2
+# 2
 
 # turtle.home()
 # turtle.pu()
