@@ -113,7 +113,7 @@ def relocating(ball_1 , ball_2) :
 
 	while r > 100 :
 		return False
-		
+
 	X_coordinate = random.randint( -SCREEN_WIDTH + MAXIMUM_BALL_RADIUS , SCREEN_WIDTH - MAXIMUM_BALL_RADIUS)
 	Y_coordinate = random.randint(-SCREEN_HEIGHT + MAXIMUM_BALL_RADIUS , SCREEN_HEIGHT - MAXIMUM_BALL_RADIUS)
 	X_axis_speed = 0 
@@ -197,7 +197,8 @@ def movearound(event):
 	X_coordinate = event.x - SCREEN_WIDTH
 	Y_coordinate = SCREEN_HEIGHT - event.y
 	MY_BALL.goto(X_coordinate, Y_coordinate)
-
+	while MY_BALL.r > 100 :
+		return False
 
 
 
@@ -207,8 +208,8 @@ turtle.listen()
 
 
 while RUNNING:
-	SCREEN_WIDTH = turtle.getcanvas().winfo_width()/2
-	SCREEN_HEIGHT = turtle.getcanvas().winfo_height()/2
+	SCREEN_WIDTH = turtle.getcanvas().winfo_width()//2
+	SCREEN_HEIGHT = turtle.getcanvas().winfo_height()//2
 	move_all_balls()
 	check_all_balls_collisions()
 	RUNNING = check_myball_collision()

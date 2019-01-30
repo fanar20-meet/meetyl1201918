@@ -1,10 +1,6 @@
 import turtle 
 
 
-high = 300
-low = -300
-right = 300
-left = -300
 
 turtle.hideturtle()
 class Ball (turtle.Turtle):
@@ -31,19 +27,19 @@ class Ball (turtle.Turtle):
 		current_y = self.ycor()
 		new_y = current_y + self.dy
 		right_side_ball = new_x + self.r
-		left_side_ball = new_x + self.r
+		left_side_ball = new_x - self.r
 		up_side_ball = new_y + self.r
-		down_side_ball = new_y + self.r
+		down_side_ball = new_y - self.r
 		self.SCREEN_WIDTH = SCREEN_WIDTH
 		self.SCREEN_HEIGHT = SCREEN_HEIGHT
 		self.goto(new_x,new_y)
 
 
 
-		if left_side_ball < left or right_side_ball > right :
+		if left_side_ball < -SCREEN_WIDTH or right_side_ball > SCREEN_WIDTH :
 			self.dx = -self.dx
 		
-		if up_side_ball > high or down_side_ball < low :
+		if up_side_ball > SCREEN_HEIGHT or down_side_ball < -SCREEN_HEIGHT :
 			self.dy = -self.dy
 		
 
