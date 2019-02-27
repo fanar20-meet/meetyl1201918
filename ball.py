@@ -14,7 +14,7 @@ class Ball (turtle.Turtle):
 		self.shape("circle")
 		self.shapesize(r/10)
 		self.color(color)
-		self.pu()
+		self.pu()      
 		self.goto(x,y)
 		turtle.pu()
 

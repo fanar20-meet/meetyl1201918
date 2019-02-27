@@ -3,7 +3,7 @@ import time
 import random
 import math 
 from ball import *
-import turtle
+
 
 screen = turtle.Screen()
 screen.setup(2000,1300)
@@ -332,11 +332,11 @@ turtle.listen()
 s = 8
           
 
-def movearound(event):
+ # def movearound(event):
 
-	X_coordinate = event.x - SCREEN_WIDTH
-	Y_coordinate = SCREEN_HEIGHT - event.y
-	MY_BALL.goto(X_coordinate, Y_coordinate)
+# 	X_coordinate = event.x - SCREEN_WIDTH
+# 	Y_coordinate = SCREEN_HEIGHT - event.y
+# 	MY_BALL.goto(X_coordinate, Y_coordinate)
 	
 
 
@@ -405,3 +405,4 @@ if RUNNING == False :
 time.sleep(3)
 
 
+ 
